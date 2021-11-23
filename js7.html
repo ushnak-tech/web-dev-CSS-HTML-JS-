@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //alert('Hiiii')
+        //let name=prompt('what is your name', 'guest')
+        let namepost=confirm('do you wanna delete?')
+        console.log(namepost)
+        friends=['nO','rEAL','fRIEND','sAD'];
+        friends.forEach( function f(element) {
+            console.log(element)
+            
+        });
+        for(element of friends)
+        {
+            console.log(element) 
+        }
+        const employee={name:'Harry',
+    age:25,salary:100000,residence:'Rampur'}
+    console.log('iterating without a loop objects')
+    for(key in employee){
+        console.log(`The value of ${key} is ${employee[key]}`)
+    }
+    </script>
+</body>
+</html>

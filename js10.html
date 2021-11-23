@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        time now is <span id="time"></span>
+    </div>
+
+
+<script>
+    console.log('hi')
+    function greet(name,bye){
+        console.log('Shab-e-khair Janis '+name+' '+bye)
+    }
+    timeOut=setTimeout(greet,3000,'sista','bye')
+    console.log(timeOut)
+    clearTimeout(timeOut)
+
+    inter=setInterval(greet,1000,'Ushna','God Bless');
+    clearInterval(inter)
+    function DisplayTime()
+    { time= new Date();
+        console.log(time);
+        document.getElementById('time').innerHTML=time;
+         
+        
+       
+    }
+    setInterval(DisplayTime, (1000));
+</script>
+
+</body>
+</html>

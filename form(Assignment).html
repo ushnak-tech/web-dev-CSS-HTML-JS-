@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        body {
+            padding: 10px 25px;
+            margin-left: 150px;
+            background-color: rgb(255, 236, 212);
+
+        }
+
+        .formdesign {
+            font-size: 15px;
+            /* padding: 10px 25px; */
+        }
+
+        .formdesign input {
+            /* width: 39%; */
+            padding: 5px 8px;
+            border: 1px solid blue;
+            border-radius: 5px;
+            margin: 4px;
+        }
+
+        #course {
+            margin: 4px;
+            border-color: blue;
+        }
+
+        #f7 {
+            margin: 6px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        #f9 input {
+            border: 0px;
+        }
+
+        span {
+            color: red;
+        }
+
+        .but {
+            border-radius: 5px;
+            width: 80px;
+            height: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>welcome to our website </h2>
+    <form action="/myaction.php" name="myform" onsubmit="r " method="POST">
+        <div class=" formdesign" id="f1">
+            <label for="name"> Name </label>
+            <input type="text" name="mname" id="name" required><b> <span class="formserror"></span></b>
+        </div>
+        <div class=" formdesign" id="f2">
+            <label for="roll"> Roll No </label>
+            <input type="text" name="myroll" id="roll" required><b> <span class="formserror"></span></b>
+        </div>
+        <div class=" formdesign" id="f3">
+            <label for="email"> Email </label>
+            <input type="text" name="myemail" id="email" required ><b> <span class="formserror"></span></b>
+        </div>
+        <div class=" formdesign" id="f4">
+            <label for="age"> Age </label>
+            <input type="number" name="myage" id="age" required><b> <span class="formserror"></span></b>
+        </div>
+        <div class=" formdesign" id="f6">
+            <label for="course">Course</label>
+            <select name="mycr" id="course">
+                <option value="1" selected> B.Sc(Hons) Computer Science </option>
+                <option value="2">B.Sc(Hons) Mathematics</option>
+                <option value="3">B.Sc(Hons) Chemistry</option>
+                <option value="4">B.Sc(Hons) Physics</option>
+                <option value="5">B.Sc(Hons) Biology</option>
+            </select><span><b> </b></span>
+        </div>
+        <div class=" formdesign" id="f5">
+            Gender: male<input type="radio" name="rad"> female <input type="radio" name="rad"><b> <span
+                    class="formserror"></span></b>
+        </div>
+        <div class="formdesign" id="f7">
+            <label for="check">Societies:<br> 1.E-Lab(ANDC)</label> <input type="checkbox" name="chec" id="check"><br>
+            2.Picfie<input type="checkbox" name="chec">
+            <br>3.Dhun<input type="checkbox" name="chec">
+            <br>4.Dhwani<input type="checkbox" name="chec">
+            <br>5.Sashakt<input type="checkbox" name="chec">
+        </div>
+
+        <div class="formdesign" id="f8">
+            Student's Address:<br><textarea name="mytext" cols="50" rows="9" required></textarea><b> <span
+                    class="formserror"></span></b>
+        </div>
+        <div class="formdesign" id="f9">
+            <label for="img">Upload Photo:</label>
+            <input type="file" id="img" name="img" accept="image/*" required><b> <span class="formserror"></span></b>
+
+        </div>
+
+        <input class="but" type="submit" value="Submit">
+
+
+    </form>
+
+
+
+</body>
+<script>
+   
+    function seterror(id, error){
+//sets error inside tag of id 
+element = document.getElementById(id);
+element.getElementsByClassName('formserror')[0].innerHTML = error;
+
+}
+function validateform(){
+var returnval = false;
+// clearErrors();
+
+//perform validation and if validation fails, set the value of returnval to false
+var name = document.forms['myform']["mname"].value;
+
+
+if (name.length<5){
+    seterror("name", "*Length of name is way too short!");
+    returnval = false;
+}
+return returnval;
+}
+
+
+
+
+
+
+
+
+
+</script>
+
+</html>

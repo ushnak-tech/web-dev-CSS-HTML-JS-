@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var i=0;
+        function changebg()
+        {
+            var divtag=document.getElementById("bgc");
+            var bgcolor=["cyan","teal","indian red","khaki"]
+            divtag.style.backgroundColor=bgcolor[i];
+            i=(i+1)%bgcolor.length;
+    
+        }
+        setInterval(changebg,2000);
+    </script>
+    <style>
+        #bgc{
+            border: 2px solid black;
+            background-color: cornflowerblue;
+            margin: 100px 300px;
+            padding: 15px;
+            font-size:19px ;
+
+        }
+        h3{
+            text-align: center;
+            font-size: 35px;
+        }
+        h1{
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1> background color changes every 2secs</h1>
+    <div id="bgc">
+        <h3> heading</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet totam possimus sed eos nihil atque eum id officia dolores excepturi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum minima magnam voluptates cupiditate a inventore non necessitatibus veniam, unde alias? Rerum dolorem mollitia ducimus a, voluptate aliquid minima at animi?</p>
+    </div>
+</body>
+</html>

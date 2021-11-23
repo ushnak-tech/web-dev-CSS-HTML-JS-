@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        #btn{
+            border: 2px solid blue;
+            color: rgb(2, 5, 5);
+            background-color: cadetblue;
+            padding: 5px;
+            margin: 11px 635px;
+            border-radius: 5px;
+           
+        }
+        #btn:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1> heading</h1>
+        <p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis nisi rem odio voluptate corrupti minus
+            nobis, aliquid corporis perferendis maiores ut, libero hic incidunt unde accusamus, nam magnam dolor minima
+            dolore animi? Minus doloremque quam dolore, deleniti dolorum ipsa sequi totam architecto harum mollitia
+            voluptas commodi asperiores consectetur nesciunt excepturi blanditiis distinctio voluptatem est voluptate
+            animi. Neque distinctio perferendis placeat pariatur error. Facere, esse reprehenderit! Aperiam blanditiis,
+            recusandae enim optio tempora numquam ratione quos fugit reiciendis vero eum possimus dolor earum deleniti
+            iste quas saepe reprehenderit iusto, repellat facilis ab vitae quasi labore. Laborum voluptate officiis
+            necessitatibus quod ex. Assumenda dolorum corporis mollitia a, omnis quidem, esse error optio consectetur
+            eveniet impedit molestias tenetur sit amet reprehenderit ut possimus ipsa vel cupiditate! Tenetur voluptas
+            inventore voluptatem officiis commodi minima! Esse cum quibusdam dolor excepturi at temporibus totam
+            nostrum, rerum illo corporis natus odio molestias? Voluptatibus nulla reiciendis dicta? Vel numquam
+            suscipit, consectetur, rerum minima officiis obcaecati, nulla impedit architecto esse modi id blanditiis.
+            Rerum facere dignissimos, consequuntur quidem beatae velit. Beatae temporibus optio eveniet delectus
+            molestiae minus dolores eius porro quasi quisquam quidem ad, sint voluptate facilis, magnam maxime enim
+            dolor. Adipisci sit architecto quisquam molestiae. Sint odit, aut voluptas atque optio quia placeat ab
+            obcaecati porro, nisi nobis eum vero ipsa est! Accusamus rerum quibusdam, ad est sint commodi. Cupiditate
+            inventore architecto, officiis delectus quibusdam iure deserunt obcaecati iusto vero voluptates.</p>
+
+
+
+
+    </div>
+    <button id="btn" onclick="hide()">Hide/Unhide</button>
+    <script>
+        let para= document.getElementById('para')
+        para.addEventListener('mouseover', function run(){
+            console.log('Mouse Inside')
+
+        });
+        para.addEventListener('mouseout', function run(){
+            console.log('Mouse outside')
+
+        });
+        function hide(){
+            let id= document.getElementById('btn')
+            let para= document.getElementById('para')
+            if(para.style.display!='none'){
+                para.style.display='none';
+
+            }
+            else{
+            para.style.display='block';
+            }
+        }
+    </script>
+</body>
+
+</html>

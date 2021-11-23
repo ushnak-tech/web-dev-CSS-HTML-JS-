@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container" id="main">
+        <ul id="this">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+        </ul>
+        <ul id="thats">
+            <li>Here</li>
+            <li>You</li>
+        </ul>
+
+    </div>
+    <script>
+        let main = document.getElementById('main');
+        console.log(main)
+        let tthis = document.getElementById('this');
+        console.log(tthis)
+        let thats = document.getElementById('thats');
+        console.log(thats.innerHTML = '<li>Dynamic</li>')
+        let him = document.getElementsByClassName('container')
+        let sas = document.querySelector('#this>li');
+        console.log(him)
+        console.log(sas)
+        let sass = document.querySelectorAll('#this>li');
+        console.log(sass)
+
+
+
+
+
+    </script>
+</body>
+
+</html>

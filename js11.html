@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date N Time</title>
+</head>
+<div class="container">This is a container
+    The time is <span id="time"></span>
+</div>
+
+<script>
+    console.log('Greetings!!')
+    times=new Date();
+
+    console.log(times)
+
+    time2=new Date(0);
+
+    console.log(time2);
+
+    newDate=new Date(2100,4,12,5,6,7,8)
+    console.log(newDate)
+
+    yr= newDate.getMonth()
+    console.log(yr)
+
+    date= newDate.getFullYear()
+    console.log(date)
+
+    day= newDate.getDay()
+    console.log(day)
+
+    month= newDate.getDate();
+    console.log(month)
+
+    Hours= newDate.getHours();
+    console.log(Hours)
+
+    newDate.setDate(40);
+    console.log(newDate)
+    
+
+function updatetime(){
+    time.innerHTML=new Date();
+    // console.log(times)
+}
+setInterval(updatetime,(1000));
+</script>
+<body>
+    
+</body>
+</html>

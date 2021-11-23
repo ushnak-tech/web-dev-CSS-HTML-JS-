@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions</title>
+
+</head>
+
+<body>
+    <div class="container">
+        Arrow Functions Tutorial
+    </div>
+    <script>
+        function greet() {
+            console.log('Good Morning');
+        }
+
+        // Shortcut
+        greetings = () => {
+            console.log('Good Morning');
+        }
+       
+        let set = setInterval(() => {
+            console.log('We are inside the setInterval function')
+
+        }, 1000);
+        clearInterval(set)
+
+        let sum=(a,b)=>{
+            if(a>b) return a-b
+            return b-a
+
+
+        }
+
+        // shortcut
+        let sum1=(a,b)=>a+b
+        let sum2=a=>a/2;
+       
+        // creating an object
+         let obj={
+             greet:'GM',
+            name:['Abraham','Moses','Jesus','Jacob'],
+            speak(){
+                this.name.forEach((student)=>console.log(this.greet +' Hello '+ student));
+
+            }
+
+        }
+
+
+
+        greet();
+        greetings();
+        console.log(sum(77,99));
+        console.log(sum1(22,88));
+        console.log(sum2(55));
+        obj.speak()
+
+
+
+    </script>
+
+</body>
+
+</html>

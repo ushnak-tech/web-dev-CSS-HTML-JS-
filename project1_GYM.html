@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry's Gym</title>
+    <style>
+        .header {}
+
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url(gym.jpeg);
+
+            font-family: monospace;
+
+        }
+
+        .left {
+            display: inline-block;
+            /* border: 2px solid red; */
+            position: absolute;
+            left: 8px;
+            top: 22px;
+        }
+
+        .left img {
+            width: 97px;
+        }
+
+        .left div {
+            text-align: center;
+            color: #141313;
+            font-size: 27px;
+        }
+
+        .mid {
+            width: 53%;
+            margin: 22px auto;
+            font-weight: bold;
+
+            /* border: 2px solid black; */
+
+        }
+
+        .right {
+            color: blanchedalmond;
+            display: inline-block;
+            /* border: 2px solid green; */
+            position: absolute;
+            right: 8px;
+            top: 22px
+        }
+
+        .navbar {}
+
+        .navbar li {
+            display: inline-block;
+            font-size: 21px;
+
+        }
+
+        .navbar li a {
+            color: #eb0000fa;
+            text-decoration: none;
+            padding: 20px 30px
+        }
+
+        .navbar li a:hover {
+            color: rgb(201, 63, 63);
+            text-decoration: underline;
+        }
+
+        .btn {
+            margin: 1px;
+            padding: 5px;
+            color: white;
+            border-radius: 8px;
+            background-color: #935353;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(109, 82, 82);
+        }
+
+        .container {
+
+            border: 3px solid #815c5c;
+            margin: 49px 29px;
+            padding: 28px 47px;
+            width: 41%;
+            border-radius: 8px;
+        }
+
+        .form-group input {
+            text-align: center;
+            display: block;
+            margin: 8px auto;
+            padding: 10px;
+            width: 276px;
+            border: 2px solid black;
+            font-size: 20px;
+            border-radius: 15px;
+
+
+        }
+
+        #sub {
+
+            width: 226px;
+            margin: 3px 158px;
+        }
+        h1{
+            text-align: center;
+            color: cornflowerblue;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- <img src="gym.jpeg" alt=""> -->
+        <div class="left">
+            <img src="logo.jpg" alt="">
+            <div> Yo Gym</div>
+
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href='#'>Home</a></li>
+                <li><a href='#'>Services</a></li>
+                <li><a href='#'>About Us</a></li>
+                <li><a href='#'>Contact us</a></li>
+            </ul>
+
+        </div>
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+
+        </div>
+    </header>
+    <div class="container">
+        <h1> Join the best Gym of Delhi!!!!!</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="name" id="name" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="name" id="name" placeholder="Enter Your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="name" id="name" placeholder="Enter Your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="name" id="name" placeholder="Enter Your Locality">
+            </div>
+            <button class="btn" id="sub">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
